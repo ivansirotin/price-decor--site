@@ -4,79 +4,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Прайс Декор – Покраска и Обои в Нью-Йорке</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Прайс Декор — Профессиональная покраска и поклейка обоев</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <div class="container">
+  <header class="hero">
+    <div class="hero-content">
       <h1>Прайс Декор</h1>
-      <nav>
-        <a href="#services">Услуги</a>
-        <a href="#gallery">Галерея</a>
-        <a href="#prices">Цены</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#contact">Контакты</a>
-      </nav>
+      <p>Профессиональная покраска и поклейка обоев в Манхэттене, Бруклине и Квинсе</p>
+      <a href="#services" class="button">Наши услуги</a>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Покраска и поклейка обоев в Манхэттене, Бруклине и Квинсе</h2>
-      <p>Профессионально. Быстро. Качественно.</p>
-    </div>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#prices">Цены</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </nav>
 
-  <section id="services" class="container">
+  <section id="services">
     <h2>Наши услуги</h2>
     <ul>
       <li>Покраска стен и потолков</li>
-      <li>Поклейка виниловых и флизелиновых обоев</li>
+      <li>Поклейка обоев</li>
       <li>Демонтаж старых обоев</li>
       <li>Шпаклевка и подготовка стен</li>
       <li>Наружная покраска фасадов</li>
     </ul>
   </section>
 
-  <section id="prices" class="container">
+  <section id="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery">
+      <img src="images/wallpaper1.jpg" alt="Поклейка обоев"/>
+      <img src="images/painting1.jpg" alt="Покраска стен"/>
+      <img src="images/room.jpg" alt="Результат работы"/>
+    </div>
+  </section>
+
+  <section id="prices">
     <h2>Примерные цены</h2>
     <ul>
-      <li>Покраска стен – от $350</li>
-      <li>Поклейка обоев – от $400</li>
-      <li>Демонтаж обоев – от $150</li>
-      <li>Шпаклевка – от $250</li>
+      <li>Покраска стен — от $350</li>
+      <li>Поклейка обоев — от $40</li>
+      <li>Демонтаж обоев — от $150</li>
+      <li>Шпаклевка — от $250</li>
     </ul>
   </section>
 
-  <section id="gallery" class="container">
-    <h2>Наши работы</h2>
-    <p>(Фотографии можно будет добавить позже)</p>
-  </section>
-
-  <section id="reviews" class="container">
+  <section id="reviews">
     <h2>Отзывы клиентов</h2>
-    <blockquote>“Очень довольны работой! Всё сделали быстро и аккуратно.”</blockquote>
-    <blockquote>“Рекомендую! Профессиональный подход и приятная команда.”</blockquote>
+    <blockquote>“Отличная работа! Всё сделано качественно и в срок.”</blockquote>
+    <blockquote>“Рекомендую! Профессионально и аккуратно.”</blockquote>
   </section>
 
-  <section id="contact" class="container">
-    <h2>Оставьте заявку</h2>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Ваше имя" required />
-      <input type="tel" name="phone" placeholder="Телефон" required />
-      <input type="text" name="address" placeholder="Адрес" />
-      <textarea name="message" placeholder="Опишите задачу..." rows="5" required></textarea>
-      <input type="date" name="date" />
-      <button type="submit">Отправить</button>
-    </form>
-    <p>Email: Ivansirotinusa@gmail.com | Телефон: (123) 456-7890</p>
+  <section id="contact">
+    <h2>Свяжитесь с нами</h2>
+    <p>Телефон: (123) 456-7890</p>
+    <p>Email: Ivansirotinusa@gmail.com</p>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Прайс Декор. Все права защищены.</p>
-    </div>
+    <p>&copy; 2025 Прайс Декор</p>
   </footer>
 </body>
 </html>
