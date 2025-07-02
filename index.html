@@ -2,74 +2,77 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Прайс Декор — Профессиональная покраска и поклейка обоев</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс Декор</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f7f9fb; color: #333; }
+        header { background: #1e3a5f; color: white; padding: 20px 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .section { padding: 50px 20px; text-align: center; }
+        .services, .prices, .gallery, .contact, .reviews { background: white; margin: 20px auto; max-width: 1000px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 30px; }
+        .gallery img { width: 30%; margin: 10px; border-radius: 10px; }
+        footer { text-align: center; padding: 20px; background: #1e3a5f; color: white; margin-top: 40px; }
+        h2 { color: #1e3a5f; }
+    </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Прайс Декор</h1>
-      <p>Профессиональная покраска и поклейка обоев в Манхэттене, Бруклине и Квинсе</p>
-      <a href="#services" class="button">Наши услуги</a>
-    </div>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#services">Услуги</a></li>
-      <li><a href="#gallery">Галерея</a></li>
-      <li><a href="#prices">Цены</a></li>
-      <li><a href="#reviews">Отзывы</a></li>
-      <li><a href="#contact">Контакты</a></li>
-    </ul>
-  </nav>
+<header>
+    <h1>Прайс Декор</h1>
+    <p>Покраска и поклейка обоев в Манхэттене, Бруклине и Квинсе</p>
+    <nav>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
 
-  <section id="services">
+<section id="services" class="section services">
     <h2>Наши услуги</h2>
-    <ul>
-      <li>Покраска стен и потолков</li>
-      <li>Поклейка обоев</li>
-      <li>Демонтаж старых обоев</li>
-      <li>Шпаклевка и подготовка стен</li>
-      <li>Наружная покраска фасадов</li>
+    <ul style="text-align:left; max-width:500px; margin:auto;">
+        <li>Покраска стен и потолков</li>
+        <li>Поклейка виниловых и флизелиновых обоев</li>
+        <li>Демонтаж старых обоев</li>
+        <li>Шпаклевка и подготовка стен</li>
+        <li>Наружная покраска фасадов</li>
     </ul>
-  </section>
+</section>
 
-  <section id="gallery">
-    <h2>Галерея</h2>
-    <div class="gallery">
-      <img src="images/wallpaper1.jpg" alt="Поклейка обоев"/>
-      <img src="images/painting1.jpg" alt="Покраска стен"/>
-      <img src="images/room.jpg" alt="Результат работы"/>
-    </div>
-  </section>
-
-  <section id="prices">
+<section id="prices" class="section prices">
     <h2>Примерные цены</h2>
-    <ul>
-      <li>Покраска стен — от $350</li>
-      <li>Поклейка обоев — от $40</li>
-      <li>Демонтаж обоев — от $150</li>
-      <li>Шпаклевка — от $250</li>
+    <ul style="text-align:left; max-width:500px; margin:auto;">
+        <li>Покраска стен — от $350</li>
+        <li>Поклейка обоев — от $40</li>
+        <li>Демонтаж обоев — от $150</li>
+        <li>Шпаклевка — от $250</li>
     </ul>
-  </section>
+</section>
 
-  <section id="reviews">
+<section id="gallery" class="section gallery">
+    <h2>Галерея</h2>
+    <img src="https://source.unsplash.com/800x600/?interior,paint" alt="Пример работ">
+    <img src="https://source.unsplash.com/801x600/?wallpaper,room" alt="Поклейка обоев">
+    <img src="https://source.unsplash.com/802x600/?home,painting" alt="Покраска интерьера">
+</section>
+
+<section id="reviews" class="section reviews">
     <h2>Отзывы клиентов</h2>
-    <blockquote>“Отличная работа! Всё сделано качественно и в срок.”</blockquote>
-    <blockquote>“Рекомендую! Профессионально и аккуратно.”</blockquote>
-  </section>
+    <p>"Отличная работа! Всё сделано качественно и в срок."</p>
+    <p>«Рекомендую! Профессиональный подход и аккуратность.»</p>
+</section>
 
-  <section id="contact">
+<section id="contact" class="section contact">
     <h2>Свяжитесь с нами</h2>
     <p>Телефон: (123) 456-7890</p>
-    <p>Email: Ivansirotinusa@gmail.com</p>
-  </section>
+    <p>Email: ivansirotinusa@gmail.com</p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Прайс Декор</p>
-  </footer>
+<footer>
+    © 2025 Прайс Декор
+</footer>
+
 </body>
 </html>
