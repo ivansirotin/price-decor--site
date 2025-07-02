@@ -1,90 +1,82 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Price Decor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f7f7f7;
-            color: #333;
-        }
-        header, footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-        }
-        h2 {
-            margin-top: 0;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea {
-            margin-bottom: 1rem;
-            padding: 0.8rem;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        button {
-            background: #333;
-            color: white;
-            padding: 1rem;
-            font-size: 1rem;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        ul {
-            padding-left: 1.2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Прайс Декор – Покраска и Обои в Нью-Йорке</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Price Decor</h1>
-        <p>Painting & Wallpaper Services in NYC</p>
-    </header>
-
+  <header>
     <div class="container">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Interior & Exterior Painting</li>
-            <li>Wallpaper Installation & Removal</li>
-            <li>Wall Preparation & Crack Repair</li>
-        </ul>
-
-        <h2>Contact Us</h2>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: ivansirotinusa@gmail.com</p>
-
-        <h2>Request a Quote</h2>
-        <form name="contact" method="POST" data-netlify="true">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="tel" name="phone" placeholder="Your Phone" required />
-            <input type="text" name="address" placeholder="Address" />
-            <textarea name="message" rows="5" placeholder="Describe your project..." required></textarea>
-            <input type="date" name="date" />
-            <button type="submit">Send Request</button>
-        </form>
+      <h1>Прайс Декор</h1>
+      <nav>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#prices">Цены</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
     </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Price Decor</p>
-    </footer>
+  <section class="hero">
+    <div class="container">
+      <h2>Покраска и поклейка обоев в Манхэттене, Бруклине и Квинсе</h2>
+      <p>Профессионально. Быстро. Качественно.</p>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Наши услуги</h2>
+    <ul>
+      <li>Покраска стен и потолков</li>
+      <li>Поклейка виниловых и флизелиновых обоев</li>
+      <li>Демонтаж старых обоев</li>
+      <li>Шпаклевка и подготовка стен</li>
+      <li>Наружная покраска фасадов</li>
+    </ul>
+  </section>
+
+  <section id="prices" class="container">
+    <h2>Примерные цены</h2>
+    <ul>
+      <li>Покраска стен – от $350</li>
+      <li>Поклейка обоев – от $400</li>
+      <li>Демонтаж обоев – от $150</li>
+      <li>Шпаклевка – от $250</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="container">
+    <h2>Наши работы</h2>
+    <p>(Фотографии можно будет добавить позже)</p>
+  </section>
+
+  <section id="reviews" class="container">
+    <h2>Отзывы клиентов</h2>
+    <blockquote>“Очень довольны работой! Всё сделали быстро и аккуратно.”</blockquote>
+    <blockquote>“Рекомендую! Профессиональный подход и приятная команда.”</blockquote>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Оставьте заявку</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="tel" name="phone" placeholder="Телефон" required />
+      <input type="text" name="address" placeholder="Адрес" />
+      <textarea name="message" placeholder="Опишите задачу..." rows="5" required></textarea>
+      <input type="date" name="date" />
+      <button type="submit">Отправить</button>
+    </form>
+    <p>Email: Ivansirotinusa@gmail.com | Телефон: (123) 456-7890</p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Прайс Декор. Все права защищены.</p>
+    </div>
+  </footer>
 </body>
 </html>
